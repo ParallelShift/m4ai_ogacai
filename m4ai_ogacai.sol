@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 contract M4AI_OGACAI is ERC721, Ownable {
   IERC721 private ogac = IERC721(0xA83ad73eEd496fcD7adc5F4027CbAD818D0075a0);
   IERC721 private m4 = IERC721(0x68EA301ECc143C239e354a632FDb6fa1D08dA8D9);
-  //address to receive 40% of every withdrawal and has the ability to use the mint for address and withdraw functions
+  //address to receive 40% of every withdrawal ALSO has the ability to use the mint for address and withdraw functions
   address private partnerAddr = address(0x0555);  //NEEDS_PARTNER_ADDRESS_HERE!!!
   using Strings for uint256;
   using Counters for Counters.Counter;
